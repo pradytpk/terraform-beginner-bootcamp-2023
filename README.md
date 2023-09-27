@@ -16,7 +16,8 @@ The general format is:
 
 ### Considerations with the Terraform CLI Changes
 
-The Terraform CLI installation instructions have changed due to GPG keyring changes. Please refer to the latest installation CLI instructions via Terraform Documentation and update the installation scripts accordingly.
+The Terraform CLI installation instructions have changed due to GPG keyring changes. 
+Please refer to the latest installation CLI instructions via Terraform Documentation and update the installation scripts accordingly.
 
 [Install Terraform CLI](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
 
