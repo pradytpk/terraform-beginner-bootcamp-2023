@@ -8,7 +8,7 @@ The general format is:
 
 **MAJOR.MINOR.PATCH**, e.g., `1.0.1`
 
-*   **MAJOR**: Version when you make incompatible API changes.
+*   **MAJOR**: Version when you make incompatible API changes.c
 *   **MINOR**: Version when you add functionality in a backward-compatible manner.
 *   **PATCH**: Version when you make backward-compatible bug fixes.
 
@@ -236,20 +236,20 @@ The Terraform Lock File **should be committed** to your Version Control System (
 
 When attempting to run `terraform login` it will launch bash a wiswig view to generate a token. However it does not work expected in Gitpod VsCode in the browser.
 
-The workaround is manually generate a token in Terraform Cloud
+*   The workaround is manually generate a token in Terraform Cloud
 
 ```plaintext
 https://app.terraform.io/app/settings/tokens?source=terraform-login
 ```
 
-Then create open the file manually here:
+*   Then create open the file manually here:
 
 ```plaintext
 touch /home/gitpod/.terraform.d/credentials.tfrc.json
 open /home/gitpod/.terraform.d/credentials.tfrc.json
 ```
 
-Provide the following code (replace your token in the file):
+*   Provide the following code (replace your token in the file):
 
 ```plaintext
 {
@@ -260,3 +260,5 @@ Provide the following code (replace your token in the file):
   }
 }
 ```
+
+*   We have automated this workaround with the following bash script \[bin/generate\_tfrc\_credentials\](bin/generate\_tfrc\_credentials)
