@@ -255,7 +255,6 @@ Plain data values such as Local Values and Input Variables don't have any side-e
 
 [Terraform Data](https://developer.hashicorp.com/terraform/language/resources/terraform-data)
 
-
 ## Provisioners
 
 Provisioners allow you to execute commands on compute instances eg. a AWS CLI command.
@@ -305,3 +304,5 @@ resource "aws_instance" "web" {
   }
 }
 ```
+=======
+https://developer.hashicorp.com/terraform/language/resources/terraform-data
