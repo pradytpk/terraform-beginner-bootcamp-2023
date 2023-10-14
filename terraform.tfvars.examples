@@ -1,14 +1,4 @@
-user_uuid="4fe2bc0d-a128-4157-a749-01546a50f58f"
-bucket_name="4fe2bc0d-a128-4157-a749-01546a50f58f"
-index_html_filepath="/workspace/terraform-beginner-bootcamp-2023/public/index.html"
-error_html_filepath="/workspace/terraform-beginner-bootcamp-2023/public/error.html"
-assets_path="/workspace/terraform-beginner-bootcamp-2023/public/assets/"
-content_version=1
-terratowns_endpoint="https://terratowns.cloud/api"
-
-teacherseat_user_uuid="data"
-terratowns_access_token="data"
-
+# user_uuid="4fe2bc0d-a128-4157-a749-01546a50f58f"
 arcanum = {
   public_path = "/workspace/terraform-beginner-bootcamp-2023/public/arcanum"
   content_version = 2 
@@ -18,5 +8,11 @@ payday = {
   content_version = 1 
 }
 
+sushi = {
+  public_path = "/workspace/terraform-beginner-bootcamp-2023/public/sushi"
+  content_version = 2 
+}
+
+terratowns_endpoint="https://terratowns.cloud/api"
 teacherseat_user_uuid=""
 terratowns_access_token=""

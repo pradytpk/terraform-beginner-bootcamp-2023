@@ -64,3 +64,20 @@ DESCRIPTION
   town = "missingo"
   content_version = var.payday.content_version
 }
+
+module "home_sushi_hosting" {
+  source = "./modules/terrahome_aws"
+  user_uuid = var.teacherseat_user_uuid
+  public_path = var.sushi.public_path
+  content_version = var.sushi.content_version
+}
+
+resource "terratowns_home" "home_sushi" {
+  name = "How to Make Sushi"
+  description = <<DESCRIPTION
+Sushi is a delicious Japanese dish made of vinegared rice combined with various ingredients such as seafood, vegetables, and occasionally tropical fruits. It is often served with pickled ginger, soy sauce, and wasabi..
+DESCRIPTION
+  domain_name = module.home_sushi_hosting.domain_name
+  town = "cooker-cove"
+  content_version = var.sushi.content_version
+}
