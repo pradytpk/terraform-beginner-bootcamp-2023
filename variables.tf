@@ -23,3 +23,10 @@ variable "payday" {
     content_version = number
   })
 }
+
+variable "sushi" {
+  type = object({
+    public_path = string
+    content_version = number
+  })
+}
