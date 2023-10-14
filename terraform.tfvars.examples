@@ -8,3 +8,15 @@ terratowns_endpoint="https://terratowns.cloud/api"
 
 teacherseat_user_uuid="data"
 terratowns_access_token="data"
+
+arcanum = {
+  public_path = "/workspace/terraform-beginner-bootcamp-2023/public/arcanum"
+  content_version = 2 
+}
+payday = {
+  public_path = "/workspace/terraform-beginner-bootcamp-2023/public/payday"
+  content_version = 1 
+}
+
+teacherseat_user_uuid=""
+terratowns_access_token=""
